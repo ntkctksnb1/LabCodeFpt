@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="customer_order.xsl"?>
+<customer_order
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='CustomerOrder.xsd'
+    number="004985" date="2004-06-24" >
+    <lines>
+        <line no="1">
+            <item>cd</item>
+            <quantity>30</quantity>
+            <price>0.95</price>
+        </line>
+        <line no="2">
+            <item>CD RW</item>
+            <quantity>20</quantity>
+            <price>2.95</price>
+        </line>
+        <line no="3">
+            <item>weeb</item>
+            <quantity>1</quantity>
+            <price>0.05</price>
+        </line>
+    </lines>
+    <customer>
+        <name>Tenich</name>
+        <street>Nadbystrct 39</street>
+        <city>Lblin</city>
+        <post_code>20-501</post_code>
+    </customer>
+    <payment>
+        <card_issuer>Master Card</card_issuer>
+        <card_number>1234 567890 12345</card_number>
+        <expiration_date month="10" year="2005"></expiration_date>
+    </payment>
+
+</customer_order>
+

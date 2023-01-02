@@ -1,0 +1,164 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-06-2021, 14:26:24
+    Author     : Kien
+*/
+body{
+    background: #ecf0f5;
+    font-family: sans-serif;
+}
+.container{
+    margin: 0 auto;
+    background: #ffffff;
+    border-top: 3px solid #f0a838;
+    
+}
+.main{
+    /*border: 1px solid;*/
+}
+.header{
+    display: flex;
+    
+}
+.header h3{
+    margin-left: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+footer{
+    /*border: 1px solid;*/
+}
+.form, .formadd{
+    width: 95%;
+    margin: auto;
+    border: 1px solid #e8e8e8;
+    /*margin: 10px;*/
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.formadd .add label{
+    display:inline-block;
+    width: 150px;
+}
+.formadd{
+    display: flex;
+}
+.form2{
+    width: 5px;
+}
+.add{
+    padding: 10px;
+    /*display: flex;*/
+}
+.add:first-child, .add:nth-child(5), .add:nth-child(3) , .add:last-child {
+  background-color: #f9f9f9;
+}
+.formadd-input{
+    width: 250px;
+    height: 40px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 2px solid #f3f4f6;
+    border-radius: 2px;
+/*    margin: 10px 0;*/
+}
+
+
+.form form{
+    display: flex;
+}
+.box{
+    margin-right: 20px;
+}
+label{
+    font-weight: bold;
+    font-size: 14px;
+}
+#link{
+    box-sizing: border-box;
+    padding-top: 15px;
+    
+}
+.date-pick{
+    height: 30px;
+    width: 250px;
+    font-size: 14px;
+    border: 2px solid #f3f4f6;
+    border-radius: 2px;
+}
+.button{
+    padding: 10px;
+    background: #3c8dbc;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: #7db1d7;
+    font-size: 14px;
+}
+.table, .paging{
+    width: 95%;
+    margin: 5px auto;
+}
+.page-current{
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid #7db1d7;
+    border-radius: 4px;
+}
+.page-link{
+    font-size: 14px;
+    padding: 5px;
+}
+.table table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #eeeeee;
+}
+.table table tr td {
+    background: #dcdcdc;
+    border: 2px solid #eeeeee;
+}
+.table table tr th {
+    font-size: 14px;
+    padding: 10px 0;
+    border: 2px solid #eeeeee;
+}
+.big{
+    width: 23px;
+    height: 23px;
+    box-sizing: border-box;
+    /*margin-top: 10px;*/
+}
+.small{
+    width: 14px;
+    height: 14px;
+}
+.footer{
+    height: 50px;
+}
+@media screen and (max-width: 600px) {
+    .form form{
+        display: block;
+    }
+    .formadd-input{
+        width: 100%;
+    }
+    .form2{
+        width: 0;
+    }
+    .formadd form, .date-pick{
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+    }
+}

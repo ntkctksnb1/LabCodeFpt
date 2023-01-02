@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Race date="2022-06-2" name="Kien RC">
+	<Course>
+		<CourseName>Kien RC aol</CourseName>
+		<Address>29 DTL</Address>
+	</Course>
+	<Horses>
+		<Horse Name="Bonfire">
+			<Value>5000</Value>
+			<DateOfBirth>1988-01-02</DateOfBirth>
+			<Gender>M</Gender>
+		</Horse>
+		<Horse Name="Faithfull Dobbin">
+			<Value>3500</Value>
+			<DateOfBirth>1986-05-31</DateOfBirth>
+			<Gender>F</Gender>
+		</Horse>
+		<Horse Name="Pegasus">
+			<Value>3000</Value>
+			<DateOfBirth>1992-06-23</DateOfBirth>
+			<Gender>M</Gender>
+		</Horse>
+		<Horse Name="VU">
+			<Value>1</Value>
+			<DateOfBirth>2022-05-23</DateOfBirth>
+			<Gender>F</Gender>
+		</Horse>
+	</Horses>
+</Race>

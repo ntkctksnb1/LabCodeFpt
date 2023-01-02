@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="customer_order">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name = "lines" >
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name = "line" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name = "item" type="xs:string"></xs:element>
+                                        <xs:element name = "quantity" type="xs:positiveInteger"></xs:element>
+                                        <xs:element name = "price" type="price_type"></xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="no" type="xs:positiveInteger" use="required" ></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                
+                <xs:element name = "customer">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name = "name" type="xs:string"></xs:element>
+                            <xs:element name = "street" type="xs:string"></xs:element>
+                            <xs:element name = "city" type="xs:string"></xs:element>
+                            <xs:element name = "post_code" type="post_code_type"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name = "payment">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name = "card_issuer" type="xs:string"></xs:element>
+                            <xs:element name = "card_number" type="card_number_type"></xs:element>
+                            <xs:element name = "expiration_date">
+                                <xs:complexType>
+                                    <xs:attribute name="month" type="month_type" ></xs:attribute>
+                                    <xs:attribute name="year" type="year_type" ></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            
+            <xs:attribute name="number" type="customer_number_type" use="required"></xs:attribute>
+            <xs:attribute name="date" type="xs:date" use="required"></xs:attribute>
+            
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:simpleType name="customer_number_type">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{6}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="post_code_type">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{2}-[0-9]{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="card_number_type">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{4} [0-9]{6} [0-9]{5}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="price_type">
+        <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0"/>
+            <xs:maxInclusive value="99999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="month_type">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="12"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="year_type">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="9999"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

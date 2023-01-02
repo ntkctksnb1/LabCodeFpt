@@ -1,0 +1,108 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28-06-2021, 20:22:36
+    Author     : Kien
+*/
+
+body{    
+    background-image: url(../img/bg.jpg);
+    width: 100%;
+    font-family: sans-serif;
+}
+.container{
+    background: #ffffff;;    
+    width: 700px;
+    box-sizing: border-box;
+    margin: auto;
+    background-repeat: no-repeat;
+    
+}
+.pre-header{
+    background: url(../img/top_box.gif);
+    width: 700px;
+    height: 19px;
+    box-sizing: border-box;
+    margin: auto;
+    background-repeat: no-repeat;
+}
+.header{
+    /*margin: 20px;*/
+    background-image: url(../img/menu_bg.gif);
+    height: 51px;
+    width: 663px;
+    margin: auto;
+}
+.login-form, .question-form{
+    padding: 20px 20px 20px 50px;
+}
+
+.form-line{
+    margin-bottom: 20px;
+}
+.login-form h3{
+    color: #0b1388;
+}
+.login-form .form-line label{
+    width: 100px;
+    display: inline-block;
+    color: #7e96a4;
+}
+.login-form .form-line a{
+    text-decoration: none;
+    color: #7e96a4;
+}
+#make-ques form div{
+    box-sizing: border-box;
+}
+
+.footer{
+    height: 100px;
+}
+.head-bar{
+    padding: 20px 0 0 30px;
+}
+.head-bar a{
+    text-decoration: none;
+    color: #5c5759;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.time{
+    display: inline-block;
+    width: 40%;
+    float: right;
+}
+.next{
+    display: inline-block;
+    width: 20%;
+    float: right;
+}
+.user span{
+    color: blue;
+}
+.question-form div form span, .user{
+    color: #7e96a4;
+}
+.question-form div form input{
+    margin: 20px 0 0 0;
+}
+.question-form div form .button-mid{
+    margin-left: 40%;
+}
+.ques-list table{
+    width: 100%;
+}
+.ques-list table th{
+    text-align: left;
+    color: blue;
+    font-weight: normal;
+}
+textarea{
+    width: 70%;
+    height: 70px;
+}
